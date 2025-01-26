@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" href="imageshomepage/icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7347990552036969"
+     crossorigin="anonymous"></script>
+</head>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Add a gray background color with some padding */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 20px;
+      background: #f1f1f1;
+    }
+    
+    /* Header/Blog Title */
+    .header {
+      padding: 30px;
+      font-size: 40px;
+      text-align: center;
+      background: white;
+      padding-top: 7%;
+    }
+    
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {   
+      float: left;
+      width: 75%;
+    }
+    
+    /* Right column */
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+    }
+    
+    /* Fake image */
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+    
+    /* Add a card effect for articles */
+    .card {
+       background-color: white;
+       padding: 20px;
+       margin-top: 20px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /*footer*/
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #070617;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #ddd6d6;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+
+.footer-main{
+  color: rgb(77, 73, 65);
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+
+    </style>
+<body>
+ 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar fixed-top bg-body-tertiary">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand" href="index.html"><img src="imageshomepage/icon.png" height="50px" alt="icon" /></a>
+          <a class="navbar-brand" href="index.html" style="padding-left: 5px;"> Koundinya Constructions</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About us </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="product.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href= "product.html#TILEADHESIVES"  >TILE ADHESIVES</a> </li>
+                  <li><a class="dropdown-item" href="product.html#READYMIX"> READY-MIX PLASTERS </a></li>
+                  <li><a class="dropdown-item" href="product.html#BLOCKJOINTING">BLOCK JOINTING MORTARS</a></li>
+                  <li><a class="dropdown-item" href="product.html#GROUTS">GROUTS</a></li>
+                  <li><a class="dropdown-item" href="product.html#WATERPROOFING">WATERPROOFING COMPONENTS</a> </li>
+                  <li><a class="dropdown-item" href="product.html#REPAIRANDBONDING">REPAIR AND BONDING’S</a> </li>
+                  <li><a class="dropdown-item" href="product.html#INDUSTRIALGROUT">INDUSTRIAL GROUT AND FLOOR HARDENER</a> </li>
+                  <li><a class="dropdown-item" href="product.html#CUREBOND">CURE BOND WB</a> </li>
+                  <li><a class="dropdown-item" href="product.html#Jeevanjor">JEEVANJOR PRODUCTS</a> </li>
+                </ul>
+              </li>
+              
+            </ul>
+            <div style="position: absolute; right: 10%;" class="col social">
+              <ul>
+                <li ></listyle><a href="https://www.instagram.com/koundinya.constructions/"><img  src="imagefooter/instagram-svgrepo-com.svg" width="32" style="width: 32px;"></a></li>
+                <li style="padding-left: 20px;"><a href="https://www.youtube.com/@koundinyaconstructions"><img src="imagefooter/youtube-svgrepo-com.svg" width="32" style="width: 32px;"></a></li>
+                <li style="padding-left: 20px;"><a href="https://m.facebook.com/people/Koundinya-constructions/100094564905432/"><img  src="imagefooter/facebook-svgrepo-com.svg" width="32" style="width: 32px;"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="header">
+        <h2>Construction Hub</h2>
+      </div>
+      <!--blog start-->
+      
+  <div class="column">
+    <div class="card">
+            
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7347990552036969"
+            crossorigin="anonymous"></script>
+      <!-- square -->
+      <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-7347990552036969"
+            data-ad-slot="5624124129"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+      <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+          
+    </div>
+
+    <div class="card">
+            
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7347990552036969"
+            crossorigin="anonymous"></script>
+      <!-- square -->
+      <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-7347990552036969"
+            data-ad-slot="5624124129"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+      <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+          
+    </div>
+    <div class="card">
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7347990552036969"
+     crossorigin="anonymous"></script>
+<!-- square2 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7347990552036969"
+     data-ad-slot="3273292950"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </div>
+    <div class="card">
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7347990552036969"
+     crossorigin="anonymous"></script>
+<!-- square2 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7347990552036969"
+     data-ad-slot="3273292950"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </div>
+    
+  </div>
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+         <h2>Honoring the Birthright of Freedom India’s 76th Republic Day (2025)</h2>
+              <h5>Subodh atchutanna, Jan 25, 2025</h5>
+              <div class="" style="height:200px;">
+                  <img src="images/flag.jpeg"  width="80%" height="100%"/>
+              </div>
+              <p>Just as  a home needs  a sturdy  foundation to stand firm,  a nation requires a constitution to regulate,stabilize and uphold the sovereignty of a nation. Our autonomy was finally realized on the 26th of January in 1950 after our independence from British rule after decades of conceptualization and the chains that bound us to a cycle of torment and suffering were demolished and upon their remains ,the pillars of our liberty were built.</p>
+            
+              <div>
+                <p>On  the 29th of  August 1947,with Dr. B.R Ambedkar assuming the role of chairman, a seven-member drafting committee was assigned to create a permanent constitution,.The forerunner to the final constitution prepared by this committee was submitted to the Constituent Assembly on the 4th of November 1948.After an extended period of improvisations and lengthy discourse, the  assembly adopted the constitution on the  26th of  November 1949.With Dr.Rajendra Prasad as the first president of India,The more crucial portions of the constitution came into play on the  26th of January 1950. On that very day, the Assembly turned into the Parliament of India under the transitional provisions and the statements of the new constitution.The date was chosen to declare  complete independence (Poorna Swaraj) on this day in 1930.</p>
+                <div class="" style="height:200px;">
+                <img src="images/republic.jpeg"  width="80%" height="100%"/>
+                </div>
+              </div>
+              <div>
+                <p>From true determination, grit and the spirit and the untiring efforts of our forefathers,we received independence, but on this revered day, we truly gained our freedom. The rules that we drew of our own volition are what lead us today, and it is safe to say we are all grateful for this privilege.The constitution has changed over the years, but its core doctrines remain unaltered and they have served  us with exceptional efficiency, even after 76 years.76 years of freedom and every year  we are more grateful than the last one.            </p>
+                <div class="" style="height:200px;">
+                <img src="images/freedom.jpeg"  width="100%" height="100%"/>
+              </div>
+            <div>
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7347990552036969"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-7347990552036969"
+     data-ad-slot="5707884605"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+              <p>We , at Koundinya Constructions wish a happy Republic Day to all of the Indians and as we begin this year with such a remarkable reminder of triumph, we also wish that such joyous occasions visit all of our brothers and sisters and especially our patrons,regularly. </p>
+              <div class="" style="height:200px;">
+                <img src="images/my.png"  width="100%" height="120%"/>
+              </div>
+            </div>
+       </div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+          
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7347990552036969"
+        crossorigin="anonymous"></script>
+   <!-- square -->
+   <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-7347990552036969"
+        data-ad-slot="5624124129"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+   <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+    </div>
+    <div class="card">
+      <h2>About Us</h2>
+      <p>we excel in surpassing client expectations through clear communication, rigorous quality control, effective teamwork, and a focus on sustainability. </p>
+      <a href="aboutus.html"><button>For more</button></a>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+     <h5>Innovations and Advancements in Construction.(Industrial Adhesives and concrete)</h5>
+     <a href="blogone.htmltml">click here to look..</a>
+      
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <ul>
+        <li ></listyle><a href="https://www.instagram.com/koundinya.constructions/"><img  src="imagefooter/instagram-svgrepo-com.svg" width="32" style="width: 32px;"></a></li>
+        <li style="padding-left: 20px;"><a href="https://www.youtube.com/@koundinyaconstructions"><img src="imagefooter/youtube-svgrepo-com.svg" width="32" style="width: 32px;"></a></li>
+        <li style="padding-left: 20px;"><a href="https://m.facebook.com/people/Koundinya-constructions/100094564905432/"><img  src="imagefooter/facebook-svgrepo-com.svg" width="32" style="width: 32px;"></a></li>
+      </ul>
+    </div>
+    <div class="card">
+          
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7347990552036969"
+      crossorigin="anonymous"></script>
+ <!-- square -->
+ <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-7347990552036969"
+      data-ad-slot="5624124129"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+ <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+    
+    </div>
+  </div>
+</div>
+      
+           
+    <footer>
+        <!-- FOOTER START -->
+        <div class="footer">
+          <div class="contain">
+          <div class="col">
+
+            <h1 style="color: antiquewhite;" class="footer-main">Company</h1>
+            <ul>
+              <a href="aboutus.html"><li>About us</li></a>
+              <a href="portfolio.html"><li>Construction portfolio</li></a>
+              <a href="gallery.html"><li>Gallery</li></a>
+              <a href="product.html"><li>Products</li></a>
+              <a href="contactus.html"><li>Get in touch</li></a>
+            </ul> 
+          </div>
+          <div class="col">
+            <h1  style="color: antiquewhite;" class="footer-main">Products</h1>
+            <ul>
+
+                <a  href="product.html#VBondAAC"><li>V-Bond AAC BLOCKS</li></a>
+                <a  href= "product.html#TILEADHESIVES"  ><li>TILE ADHESIVES</li></a>
+                <a  href="product.html#READYMIX"> <li>READY-MIX PLASTERS </li></a>
+                <a  href="product.html#BLOCKJOINTING"><li>BLOCK JOINTING MORTARS</li></a>
+                <a  href="product.html#GROUTS"><li>GROUTS</li></a>
+            </ul>
+           
+          </div>
+
+          <div style="padding-top: 30px;"  class="col">
+            <ul>
+              <a  href="product.html#SURFACECOATING#WATERPROOFING"><li>WATERPROOFING COMPONENTS</li></a>
+                <a  href="product.html#REPAIRANDBONDING"><li>REPAIR AND BONDING’S </li></a>
+                <a  href="product.html#INDUSTRIALGROUT"><li>INDUSTRIAL GROUT AND FLOOR HARDENER </li></a>
+                <a  href="product.html#CUREBOND"><li>CURE BOND WB </li></a>
+            </ul>
+          </div>
+          <div style="padding-top: 30px;"  class="col">
+            <ul>
+                <a  href="product.html#Jeevanjor"><li>JEEVANJOR PRODUCTS</li></a>
+            </ul>
+          </div>
+          
+          <div class="col">
+            <h1 style="color: antiquewhite;" class="footer-main">Support</h1>
+            <ul>
+              <a href="contactus.html"><li>Contact us</li></a>
+              <a href="https://api.whatsapp.com/send?phone=9390269346"><li>Whatsapp</li></a>
+            </ul>
+          </div>
+          <div class="col social">
+            <h1  style="color: antiquewhite;" class="footer-main">Social</h1>
+            <ul>
+              <li><a href="https://www.instagram.com/koundinya.constructions/"><img  src="imagefooter/instagram-svgrepo-com.svg" width="32" style="width: 32px;"></a></li>
+              <li><a href="https://www.youtube.com/@koundinyaconstructions"><img src="imagefooter/youtube-svgrepo-com.svg" width="32" style="width: 32px;"></a></li>
+              <li><a href="https://m.facebook.com/people/Koundinya-constructions/100094564905432/"><img src="imagefooter/facebook-svgrepo-com.svg" width="32" style="width: 32px;"></a></li>
+            </ul>
+          </div>
+        <div class="clearfix"></div>
+        </div>
+        </div>
+        <!-- END OF FOOTER -->
+        <p style="font-size: 16px;"  class="text-center text-body-secondary">© 2023 Koundinya construction, Inc</p>
+      </footer>
+</body>
